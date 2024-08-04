@@ -1,0 +1,43 @@
+.post_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.user_profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.user_profile .left img {
+  width: 40px;
+  border-radius: 50%;
+}
+.username {
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  width: max-content;
+}
+.username:hover {
+  text-decoration: underline;
+}
+.date {
+  font-size: 12px;
+  font-weight: 400;
+  display: flex;
+  gap: 5px;
+  color:var(--color-third);
+}
+.date:hover {
+  text-decoration: underline;
+}
+.dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}

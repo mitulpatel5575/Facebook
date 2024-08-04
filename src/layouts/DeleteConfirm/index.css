@@ -1,0 +1,16 @@
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+.body {
+  margin-top: 10px;
+}
+
+.button-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 15px 10px;
+}

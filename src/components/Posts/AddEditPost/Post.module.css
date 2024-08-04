@@ -1,0 +1,130 @@
+.post_container {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+.post_head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.post_head span {
+  font-size: 18px;
+  font-weight: 700;
+}
+.post_auther {
+  display: flex;
+  padding: 10px 0px;
+  gap: 5px;
+}
+.auther_name {
+  font-size: 14px;
+  font-weight: 600;
+}
+.auther_photo {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.post_content {
+  max-height: 410px;
+  overflow-y: scroll;
+}
+.textarea {
+  width: 100%;
+  font-size: 24px;
+  background: transparent;
+  resize: none;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  /* color: var(--color-secondary); */
+}
+
+.post_footer {
+  display: flex;
+  flex-direction: column;
+}
+.post_action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid var(--color-primary);
+  border-radius: 10px;
+  height: 57px;
+}
+.footer_text {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px;
+}
+.post_image_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid var(--color-primary);
+  border-radius: 10px;
+  margin: 15px;
+  padding: 10px;
+  margin-right: 10px;
+}
+.add_image {
+  background: var(--bg-secondary);
+  border-radius: 10px;
+  position: relative;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.exit {
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+.small_white_circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--bg-third);
+  background: var(--bg-primary);
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.post_btn {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 8px 12px;
+  background: var(--bg-primary);
+  color: var(--color-primary);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+.imge {
+  height: auto;
+  width: 100%;
+}
+.img {
+  height: inherit;
+  width: inherit;
+  max-height: inherit;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.post_footer {
+  margin: 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 16px;
+  padding-top: 10px;
+}

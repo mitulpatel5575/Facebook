@@ -1,0 +1,114 @@
+.signup_card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  padding: 20px;
+}
+
+.signup_header {
+  border-bottom: 1px solid var(--bg-third);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-bottom: 10px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.signup_header i {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+}
+.signup_header_title {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+.signup_header_title1 {
+  color:var(--color-third);
+  font-size: 15px;
+}
+.signup_form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.LINE {
+  display: flex;
+  gap: 15px;
+}
+
+.login_link {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  color:var(--color-primary);
+  text-decoration: none;
+}
+.login_link:hover {
+  text-decoration: underline;
+  color:var(--color-primary);
+}
+.register {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 10px;
+}
+.error_text {
+  color: var(--color-error);
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto 10px;
+}
+.col {
+  margin-bottom: 10px;
+}
+.colHeader {
+  align-items: center;
+  color:var(--color-third);
+  display: flex;
+  font-size: 13px;
+  gap: 4px;
+}
+.select_grid {
+  grid-gap: 10px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  height: 35px;
+  margin-top: 5px;
+  width: 100%;
+}
+.gender {
+  grid-template-columns: repeat(2, 1fr);
+}
+.select_grid select {
+  border-radius: 5px;
+  color:var(--color-secondary);
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  padding: 0 10px;
+  background:var(--bg-primary);
+}
+.select_grid label {
+  border-radius: 5px;
+  align-items: center;
+  border: 1px solid var(--color-third);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  accent-color:var(--color-primary);
+}
+.ERROR {
+  border-color: var(--color-error) !important;
+}
+
+@media (min-width: 540px) {
+  .signup_card {
+    width: 400px;
+  }
+}

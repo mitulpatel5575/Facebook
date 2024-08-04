@@ -1,0 +1,155 @@
+.profile_container {
+  /* padding: 0px 15%; */
+  margin: 56px 0 30px;
+}
+
+.head {
+  background: var(--bg-primary);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.head_container {
+  max-width: 1100px;
+  width: 100%;
+  justify-items: center;
+}
+.top_head {
+  display: flex;
+  flex-direction: column;
+}
+.top_head_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.photo_container {
+  height: 80px;
+}
+.photo {
+  position: relative;
+  top: -84px;
+}
+
+.user_photo {
+  border-radius: 50%;
+  width: 168px;
+  height: 168px;
+  border: 4px solid var(--bg-primary);
+}
+.add_photo {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+}
+.profile_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 10px;
+}
+.user_name {
+  overflow-wrap: break-word;
+  text-align: flex;
+  line-height: 38px;
+  width: max-content;
+}
+.friends {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-third);
+  /* align-self: flex-start; */
+}
+
+.profile_btns {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 16px;
+  white-space: nowrap;
+  position: relative;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.footer_container {
+  max-width: 1100px;
+  width: 100%;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 6px;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.5rem;
+  max-width: 680px;
+  width: 100%;
+}
+.details {
+  width: 100%;
+  padding-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 680px;
+}
+.details_con {
+  display: flex;
+  flex-direction: column;
+  position: static;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background: var(--divider);
+  margin: 5px 0;
+}
+@media (min-width: 495px) {
+  .profile_btns {
+    width: 50%;
+  }
+}
+@media (min-width: 900px) {
+  .details_con {
+    position: sticky;
+  }
+  .footer_container {
+    grid-template-columns: 1fr 1.6fr;
+  }
+
+  .top_head_content {
+    flex-direction: row;
+    padding: 10px 16px;
+    justify-content: flex-start;
+    column-gap: 25px;
+    margin-bottom: 20px;
+  }
+  .profile_btns {
+    width: 30%;
+    margin-left: auto;
+  }
+  .profile_info {
+    width: 37%;
+    align-items: flex-start;
+  }
+  .photo {
+    top: -60px;
+  }
+
+  .user_name {
+    text-align: left;
+  }
+}
