@@ -30,8 +30,8 @@ const LoginForm = ({ setShowRegister }) => {
   };
 const GuestHandler = async()=>{
   const userData  = await login({
-    email: "Guest@live.com",
-    password: "Aaa123456",
+    email: "amrishy2003@gmail.com",
+    password: "Asdf@1234",
   }).unwrap();
   dispatch(setCredentials({ ...userData }));
 }
